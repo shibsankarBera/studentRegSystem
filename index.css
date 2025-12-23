@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /*1rem=16px =>10px/16   10px=1rem */
+}
+.heading{
+    background: linear-gradient(90deg, rgb(118, 174, 138) 0%, rgb(154, 34, 88) 50%, rgb(106, 151, 200) 100%);
+    text-align: center;
+    padding: 10px;
+    font-size: 4rem;
+    font-family: cursive;
+    font-weight: 600;
+    color: rgba(38, 184, 153, 0.841);
+}
+.main{
+    height: 90vh; 
+    width: 100%;
+   background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+    display: flex;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~Form Inputsection~~~~~~~~~~~~~~~ */
+.form-section{
+    /* background-color: aquamarine; */
+    padding: 3rem 1rem;
+    /* width: 100%; */
+    flex-basis: 40%;
+}
+form{
+    max-width: 90%;
+    height: 100%;
+    margin: auto;
+   background: linear-gradient(90deg, hsla(191, 88%, 81%, 1) 0%, hsla(260, 72%, 82%, 1) 42%, hsla(256, 72%, 79%, 1) 70%, hsla(247, 73%, 69%, 1) 100%);
+    border-radius: 10px;
+    padding: 20px; 
+
+}
+form h1{
+    
+    color:  #ac4aaa;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+/* ----------------input fields------ */
+.input-control{
+margin-bottom: 2rem;
+padding: 0.5rem;
+padding-bottom:1.5rem ;
+border-radius: 10px;
+box-shadow:  6px 5px 5px 3px #888888;
+position: relative;
+}
+form label{
+    margin-left: 10px;
+    display: block;
+    font-size: 1.8rem;
+}
+form .input-control input{
+    color: rgb(154, 42, 42);
+    width: 100%;
+    height: 3.2rem;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    border: 2px solid #f0f0f0;
+    font-size: 2rem;
+}
+form input:focus{
+    outline: none;
+}
+    
+.input-control.success input{
+    border-color: #09c372;
+}
+.input-control.error input{
+    border-color: #ff3860;
+}
+
+
+/* _______icon_________ */
+.input-control i{
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    font-size: 2rem;
+    visibility: hidden;
+}
+.input-control.success i.ri-checkbox-circle-line{
+    color: blue;
+    visibility: visible;
+}
+.input-control.error i.ri-error-warning-line{
+    color: #ff3860;
+    visibility: visible;
+}
+
+/* _________error message_____ */
+
+.small{
+  font-size: 1.4rem;
+  position: absolute;
+  left: 20px;
+  bottom: 2px;
+  color:#ff3860;
+  visibility: hidden;
+}
+.input-control.error .small{
+    visibility: visible;
+}
+
+
+
+
+/* ___________submit button________ */
+
+#submibutton{
+    height: 40px;
+    width: 140px;
+    background-color: #5CC1DD;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 60%;
+    font-size: 24px;
+    padding: 5px;
+    cursor: pointer;
+}
+#submibutton:hover{
+    color: #09a50c;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+/* .main{
+    display: flex;
+    max-width: 100%;
+    background-color: coral;
+} */
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~Display section~~~~~~~~~~~~~~~~~~~~~ */
+
+.display-section{
+    flex-basis: 60%;
+    margin: 20px;
+    background: linear-gradient(315deg, hsla(148, 63%, 63%, 1) 0%, hsla(192, 96%, 50%, 1) 18%, hsla(132, 63%, 67%, 1) 56%, hsla(84, 79%, 62%, 1) 75%, hsla(65, 92%, 54%, 1) 96%);
+}
+ .display-section  h1{
+    font-size: 3rem;
+    text-align: center;
+ }
+.container{
+   max-width: 90%;
+   margin: auto;
+   height: 100px;
+   background-color: #555;
+   
+}
+.container table{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    border: 1px solid white;
+}
+.container table thead{
+    background-color: #09c372;
+}
+
+
+.container table thead td{
+    padding: 16px;
+}
+
+tbody  tr:nth-child(even){
+    background-color: #E5F61B;
+}
+.input-row {
+    padding: 10px;
+}
+.input-row td{
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* _______Edit buttons_____ */
+
+.display-section button{
+background-color: transparent;
+font-size: 2rem;
+ border: none;
+ cursor: pointer;
+}
+.delete {
+   color: red;
+   
+}
+.edit i{
+    color: blue;
+}
+
+/* _______________scroll bar________ */
+
+
