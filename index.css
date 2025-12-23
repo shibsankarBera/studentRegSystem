@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +8,8 @@ html {
     font-size: 62.5%;
     /*1rem=16px =>10px/16   10px=1rem */
 }
-.heading{
+
+.heading {
     background: linear-gradient(90deg, rgb(118, 174, 138) 0%, rgb(154, 34, 88) 50%, rgb(106, 151, 200) 100%);
     text-align: center;
     padding: 10px;
@@ -17,99 +18,112 @@ html {
     font-weight: 600;
     color: rgba(38, 184, 153, 0.841);
 }
-.main{
-    height: 90vh; 
+
+.main {
+    height: 90vh;
     width: 100%;
-   background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+    background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
     display: flex;
 }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~Form Inputsection~~~~~~~~~~~~~~~ */
-.form-section{
+.form-section {
     /* background-color: aquamarine; */
     padding: 3rem 1rem;
     /* width: 100%; */
     flex-basis: 40%;
 }
-form{
+
+form {
     max-width: 90%;
     height: 100%;
     margin: auto;
-   background: linear-gradient(90deg, hsla(191, 88%, 81%, 1) 0%, hsla(260, 72%, 82%, 1) 42%, hsla(256, 72%, 79%, 1) 70%, hsla(247, 73%, 69%, 1) 100%);
+    background: linear-gradient(90deg, hsla(191, 88%, 81%, 1) 0%, hsla(260, 72%, 82%, 1) 42%, hsla(256, 72%, 79%, 1) 70%, hsla(247, 73%, 69%, 1) 100%);
     border-radius: 10px;
-    padding: 20px; 
+    padding: 20px;
 
 }
-form h1{
-    
-    color:  #ac4aaa;
+
+form h1 {
+
+    color: #ac4aaa;
     text-align: center;
     font-size: 2rem;
     padding-bottom: 1.5rem;
 }
 
 /* ----------------input fields------ */
-.input-control{
-margin-bottom: 2rem;
-padding: 0.5rem;
-padding-bottom:1.5rem ;
-border-radius: 10px;
-box-shadow:  6px 5px 5px 3px #888888;
-position: relative;
+.input-control {
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    padding-bottom: 1.8rem;
+    border-radius: 10px;
+    box-shadow: 6px 5px 5px 3px #888888;
+    position: relative;
 }
-form label{
+
+form label {
     margin-left: 10px;
     display: block;
     font-size: 1.8rem;
 }
-form .input-control input{
+
+form .input-control input {
     color: rgb(154, 42, 42);
     width: 100%;
-    height: 3.2rem;
+    height: 3.5rem;
     border-radius: 10px;
     padding: 0.5rem 1rem;
-    border: 2px solid #f0f0f0;
+    border: 1.5px solid #f0f0f0;
     font-size: 2rem;
+    background-color: transparent;
 }
-form input:focus{
+
+form input:focus {
     outline: none;
 }
-    
-.input-control.success input{
+
+.input-control.success input {
     border-color: #09c372;
 }
-.input-control.error input{
+
+.input-control.error input {
     border-color: #ff3860;
 }
 
 
 /* _______icon_________ */
-.input-control i{
+.input-control i {
     position: absolute;
-    top: 30px;
-    right: 15px;
+    top: 42%;
+    right: 1.5rem;
+    
     font-size: 2rem;
     visibility: hidden;
 }
-.input-control.success i.ri-checkbox-circle-line{
+
+.input-control.success i.ri-checkbox-circle-line {
     color: blue;
     visibility: visible;
 }
-.input-control.error i.ri-error-warning-line{
+
+.input-control.error i.ri-error-warning-line {
     color: #ff3860;
     visibility: visible;
 }
 
 /* _________error message_____ */
 
-.small{
-  font-size: 1.4rem;
-  position: absolute;
-  left: 20px;
-  bottom: 2px;
-  color:#ff3860;
-  visibility: hidden;
+.small {
+    font-size: 1.6rem;
+    position: absolute;
+    left: 20px;
+    bottom: 2px;
+    color: #ff3860;
+    visibility: hidden;
 }
-.input-control.error .small{
+
+.input-control.error .small {
     visibility: visible;
 }
 
@@ -118,19 +132,20 @@ form input:focus{
 
 /* ___________submit button________ */
 
-#submibutton{
+#submibutton {
     height: 40px;
     width: 140px;
     background-color: #5CC1DD;
     color: white;
     border: none;
     border-radius: 10px;
-    margin-left: 60%;
+    margin-left: 50%;
     font-size: 24px;
     padding: 5px;
     cursor: pointer;
 }
-#submibutton:hover{
+
+#submibutton:hover {
     color: #09a50c;
     background-color: white;
     transition: 0.3s ease;
@@ -140,55 +155,53 @@ form input:focus{
 
 
 
-/* .main{
-    display: flex;
-    max-width: 100%;
-    background-color: coral;
-} */
-
-
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~Display section~~~~~~~~~~~~~~~~~~~~~ */
 
-.display-section{
+.display-section {
     flex-basis: 60%;
     margin: 20px;
     background: linear-gradient(315deg, hsla(148, 63%, 63%, 1) 0%, hsla(192, 96%, 50%, 1) 18%, hsla(132, 63%, 67%, 1) 56%, hsla(84, 79%, 62%, 1) 75%, hsla(65, 92%, 54%, 1) 96%);
 }
- .display-section  h1{
+
+.display-section h1 {
     font-size: 3rem;
     text-align: center;
- }
-.container{
-   max-width: 90%;
-   margin: auto;
-   height: 100px;
-   background-color: #555;
-   
 }
-.container table{
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    /* height: 100px; */
+
+}
+
+.container table {
     font-size: 2rem;
     width: 100%;
     text-align: center;
     border: 1px solid white;
 }
-.container table thead{
+
+.container table thead {
     background-color: #09c372;
 }
 
 
-.container table thead td{
-    padding: 16px;
+.container table thead td {
+    padding: 1.6rem;
 }
 
-tbody  tr:nth-child(even){
+tbody tr:nth-child(even) {
     background-color: #E5F61B;
 }
+
 .input-row {
     padding: 10px;
 }
-.input-row td{
+
+.input-row td {
     overflow-x: hidden;
 }
 
@@ -198,20 +211,57 @@ tbody  tr:nth-child(even){
 
 /* _______Edit buttons_____ */
 
-.display-section button{
-background-color: transparent;
-font-size: 2rem;
- border: none;
- cursor: pointer;
+.display-section button {
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
 }
+
 .delete {
-   color: red;
-   
+    color: red;
+
 }
-.edit i{
+
+.edit i {
     color: blue;
 }
 
 /* _______________scroll bar________ */
 
 
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ Meadia Query ~~~~~~~~~~~~~~~~~ */
+/* resopnsive for ipad Mini */
+/*------------------Base clases (TAB)------------*/
+@media only screen and (max-width:768px) {
+
+
+    html {
+        font-size: 50%;
+        /*1rem=16px =>10px/16   10px=1rem */
+    }
+    main{
+        flex-direction: column;
+    }
+    form {
+    max-width: 80%;
+    height: 40h;
+    margin: auto;
+    }
+
+}
+
+/*///////////////////////////// FOR MOBILE DEVICES///////////*/
+@media (max-width:576px) {
+
+    /*------------------Base clases------------*/
+    body {
+        background-color: rgb(113, 183, 92);
+    }
+
+    html {
+        font-size: 40%;
+    }
+}
