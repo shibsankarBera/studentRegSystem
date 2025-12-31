@@ -8,19 +8,30 @@ html {
     font-size: 62.5%;
     /*1rem=16px =>10px/16   10px=1rem */
 }
-
+/* ------------header section------ */
 .heading {
     background: linear-gradient(90deg, rgb(118, 174, 138) 0%, rgb(154, 34, 88) 50%, rgb(106, 151, 200) 100%);
     text-align: center;
-    padding: 10px;
-    font-size: 4rem;
+    padding:  0.6rem 3rem;
+    font-size: 1.6rem;
     font-family: cursive;
     font-weight: 600;
     color: rgba(38, 184, 153, 0.841);
+    text-transform:capitalize;
+    height: 12vh;
+}
+.heading p{
+padding-bottom: 0.5rem;
+font-size: 1.1rem;
+color:cyan;
 }
 
+
+/* -----------------Main Section--------- */
+
+
 .main {
-    height: 90vh;
+    height: 88vh;
     width: 100%;
     background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
     display: flex;
@@ -28,9 +39,7 @@ html {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~Form Inputsection~~~~~~~~~~~~~~~ */
 .form-section {
-    /* background-color: aquamarine; */
     padding: 3rem 1rem;
-    /* width: 100%; */
     flex-basis: 40%;
 }
 
@@ -45,7 +54,7 @@ form {
 }
 
 form h1 {
-
+ text-transform:capitalize;
     color: #ac4aaa;
     text-align: center;
     font-size: 2rem;
@@ -55,7 +64,7 @@ form h1 {
 /* ----------------input fields------ */
 .input-control {
     margin-bottom: 2rem;
-    padding: 0.5rem;
+    padding:  0.2rem 1rem;
     padding-bottom: 1.8rem;
     border-radius: 10px;
     box-shadow: 6px 5px 5px 3px #888888;
@@ -63,7 +72,6 @@ form h1 {
 }
 
 form label {
-    margin-left: 10px;
     display: block;
     font-size: 1.8rem;
 }
@@ -96,8 +104,7 @@ form input:focus {
 .input-control i {
     position: absolute;
     top: 42%;
-    right: 1.5rem;
-    
+    right: 1.5rem; 
     font-size: 2rem;
     visibility: hidden;
 }
@@ -115,7 +122,7 @@ form input:focus {
 /* _________error message_____ */
 
 .small {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     position: absolute;
     left: 20px;
     bottom: 2px;
@@ -132,7 +139,7 @@ form input:focus {
 
 /* ___________submit button________ */
 
-#submibutton {
+#submitbutton {
     height: 40px;
     width: 140px;
     background-color: #5CC1DD;
@@ -140,12 +147,12 @@ form input:focus {
     border: none;
     border-radius: 10px;
     margin-left: 50%;
-    font-size: 24px;
+    font-size: 20px;
     padding: 5px;
     cursor: pointer;
 }
 
-#submibutton:hover {
+#submitbutton:hover {
     color: #09a50c;
     background-color: white;
     transition: 0.3s ease;
@@ -166,44 +173,100 @@ form input:focus {
 }
 
 .display-section h1 {
+     padding: 1rem;
     font-size: 3rem;
     text-align: center;
+    text-transform:capitalize;
 }
 
 .container {
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
-    /* height: 100px; */
+    height: 85%;
+    padding: 20px;
+    padding-top: 0;
 
 }
-
+/* ---------------TABLE BASE -------------- */
 .container table {
-    font-size: 2rem;
     width: 100%;
-    text-align: center;
-    border: 1px solid white;
+    margin: auto;
+     border-collapse: collapse;
+    table-layout: fixed; 
 }
+/*        // TABLE CELLS  // */
+.container table td {
+    text-align: center;
+    height: 10px;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    white-space: nowrap;   
+    overflow: hidden;         
+    text-overflow: ellipsis;   
+} 
+/* adjust colom width */
+.container table td:first-child{
+width: 6%;
+}
+.container table td:nth-child(2),.container table td:nth-child(4){
+ width: 25%;
+}
+.container table td:nth-child(3){
+ width: 14%;
+}
+.container table td:nth-child(5){
+ width: 18%;  
+}
+
+
+/* ----------------table head------------- */
 
 .container table thead {
-    background-color: #09c372;
+   width: 100%;
+    table-layout: fixed; 
+    position: sticky;
+    top: 0;
+    background-color: rgb(107, 224, 224);
+    z-index: 2;
 }
 
 
 .container table thead td {
     padding: 1.6rem;
+     font-weight: bold;
+    font-size: 2rem;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #E5F61B;
+.container table thead td:nth-child(even) {
+    background-color: #5CC1DD;
 }
 
-.input-row {
-    padding: 10px;
+.container table thead td:first-child,.container table thead td:last-child{
+writing-mode:sideways-lr;
+  text-orientation: upright;
+  font-size: 1.6rem;
+  padding: 0px;
 }
 
-.input-row td {
-    overflow-x: hidden;
+/* ---------------table body--------------- */
+.container table tbody td:nth-child(6),.container table tbody td:nth-child(7){
+padding: 0;
 }
+.container table tbody tr:nth-child(even){
+background-color: #9bd526;
+} 
+.container table tbody tr:hover{
+    background-color: #ff3860;
+    transition: 0.4s;
+}
+.container table tbody tr{
+    height: 4.5rem;
+}
+.container table tbody td{
+border-bottom:10px solid  rgb(38, 111, 39);
+border-right: 1px solid  rgb(38, 111, 39);
+}
+
 
 
 
@@ -212,10 +275,12 @@ tbody tr:nth-child(even) {
 /* _______Edit buttons_____ */
 
 .display-section button {
-    background-color: transparent;
-    font-size: 2rem;
+    background-color: white;
+    font-size: 2.5rem;
     border: none;
     cursor: pointer;
+     margin: 0.2rem; 
+     border-radius: 4px; 
 }
 
 .delete {
@@ -228,7 +293,18 @@ tbody tr:nth-child(even) {
 }
 
 /* _______________scroll bar________ */
+.container::-webkit-scrollbar {
+    --thumb: #4CAF50;
+}
 
+.container::-webkit-scrollbar-thumb {
+    background-color: #d50f0f;
+    border-radius: 6px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: #0eaca4;
+}
 
 
 
@@ -247,9 +323,16 @@ tbody tr:nth-child(even) {
     }
     form {
     max-width: 80%;
-    height: 40h;
     margin: auto;
+    height: 42vh;
     }
+     .heading{
+    height: 8vh;
+   }
+   .display-section {
+     height: 50vh;
+}
+    
 
 }
 
