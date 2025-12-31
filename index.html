@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A student registration system to add, edit, and delete student records.">
+    <meta name="shibsankar bera" content="Student Registration System">
+
     <title>student regestration system</title>
     <link
       rel="stylesheet"
@@ -14,7 +17,12 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header class="heading">student regestration system</header>
+    <header class="heading"><h1>student regestration system</h1>
+      <p>
+        This system allows students to register their personal details such as
+        name,contact number,etc.. It also provides options to
+        edit and delete student records efficiently.
+    </p></header>
     <main class="main">
       <section class="form-section">
         <form action="/" id="form">
@@ -38,87 +46,47 @@
             <i class="ri-error-warning-line"></i>
             <small class="small">message</small>
           </div>
-          <div class="input-control success">
+          <div class="input-control ">
             <label for="stEmail">email ID</label>
             <input type="text" id="stEmail" />
             <i class="ri-checkbox-circle-line"></i>
             <i class="ri-error-warning-line"></i>
             <small class="small">message</small>
           </div>
-          <div class="input-control error">
+          <div class="input-control ">
             <label for="stContact">contact Number</label>
             <input type="number" id="stContact" />
             <i class="ri-checkbox-circle-line"></i>
             <i class="ri-error-warning-line"></i>
             <small class="small">message</small>
           </div>
-          <button type="button" id="submibutton">
+          <button type="button" id="submitbutton">
             Submit <i class="ri-send-plane-fill"></i>
           </button>
         </form>
       </section>
       <section class="display-section">
         <h1>enrolled students</h1>
-        <div class="container">
-          <table>
+        <div class="container"  id="box">
+          <table id="tabl">
             <thead>
               <tr>
+                <td>Sl.No</td>
                 <td>name</td>
                 <td>id</td>
                 <td>email</td>
                 <td>mobile no</td>
-                <td colspan="2"></td>
+                <td colspan="2">action</td>
               </tr>
             </thead>
-            <tbody>
-              <tr class="input-row">
-                <td>shibu</td>
-                <td>12242</td>
-                <td>dfffdf@b.com</td>
-                <td>90568528</td>
-                <td>
-                  <button class="delete">
-                    <i class="ri-delete-bin-line"></i>
-                  </button>
-                </td>
-                <td>
-                  <button class="edit"><i class="ri-edit-2-line"></i></button>
-                </td>
-              </tr>
-              <tr class="input-row">
-                <td>rahul</td>
-                <td>22242</td>
-                <td>rahulf@b.com</td>
-                <td>89258558</td>
-                <td>
-                  <button class="delete">
-                    <i class="ri-delete-bin-line"></i>
-                  </button>
-                </td>
-                <td>
-                  <button class="edit"><i class="ri-edit-2-line"></i></button>
-                </td>
-              </tr>
-              <tr class="input-row">
-                <td>shibuihhhuhhuhuu</td>
-                <td>12242</td>
-                <td>ugudfffdf@b.com</td>
-                <td>90568528</td>
-                <td>
-                  <button class="delete">
-                    <i class="ri-delete-bin-line"></i>
-                  </button>
-                </td>
-                <td>
-                  <button class="edit"><i class="ri-edit-2-line"></i></button>
-                </td>
-              </tr>
+           <tbody id="display-items">
+              
             </tbody>
           </table>
         </div>
       </section>
     </main>
 
-    <!-- <script src="./regform.js"></script> -->
+    <script src="index.js"></script>
   </body>
 </html>
